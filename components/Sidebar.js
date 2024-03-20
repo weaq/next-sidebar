@@ -49,7 +49,7 @@ export default function sidebar() {
 
                 {sidebarItems.map(({ name, href, icon }) => {
                     return (
-                        <div className="sidebar-position">
+                        <div className="sidebar-position" key={name}>
                             <Link className="sidebar--link" href={href}>
                                 <FontAwesomeIcon icon={icon} />
                                 <span>{name}</span>
